@@ -109,27 +109,30 @@ section {
 }
 
 .hero-text a {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    border-radius: 30px;
-    line-height: 1.4;
-    background-color: #4d4d4d;
-    border: 1px solid transparent;
-    transition: all 0.5s ease;
-  }
-  
-  .hero-text a:hover {
-    background-color: transparent;
-    border: 1px solid white;
-    transform: translateX(8px);
-  }
-  
-  .hero-text a.portfolio-btn {
-    margin-left: 20px;
-    background-color: transparent;
-    border: 1px solid white;
-  }
-  
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 30px;
+  line-height: 1.4;
+  background-color: #4d4d4d;
+  border: 1px solid transparent;
+  transition: all 0.5s ease;
+}
+
+.hero-text a:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  transform: translateX(8px);
+}
+
+.hero-text a.portfolio-btn {
+  margin-left: 20px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.hero-text a.portfolio-btn i {
+  margin-right: 10px;
+}
