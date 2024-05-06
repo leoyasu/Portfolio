@@ -1,134 +1,135 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Inconsolata', monospace;
-    list-style: none;
-    text-decoration: none;
-    color: white;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+  list-style: none;
+  text-decoration: none;
+  color: white;
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
-header{
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 3%;
+header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 3%;
 }
 
 .logo {
-    font-size: 30px;
-    font-weight: 800;
+  font-size: 30px;
+  font-weight: 800;
 }
 
-.nav-list{
-    display: flex;
+.nav-list {
+  display: flex;
 }
 
 .nav-list a {
-    margin-left: 60px;
-    font-size: 15px;
-    font-weight: 600;
-    border-bottom: 2px solid transparent;
-    transition: all .5 ease;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s ease;
 }
 
-.nav-list a:hover{
-    border-bottom: 2px solid white;
+.nav-list a:hover {
+  border-bottom: 2px solid white;
 }
 
-#menu-icons{
-    display: none;
-    color: white;
-    font-size: 35px;
-    z-index: 101;
-    cursor: pointer;
+#menu-icons {
+  display: none;
+  color: white;
+  font-size: 35px;
+  z-index: 101;
+  cursor: pointer;
 }
 
-#menu-toggle{
-    display: none;
+#menu-toggle {
+  display: none;
 }
 
 .menu-icons-action {
-    display: none;
+  display: none;
 }
 
 .hero {
-    height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 2rem;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
 }
 
-section{
-    padding: 0 8%;
+section {
+  padding: 0 8%;
 }
 
-.hero-text h2{
-    font-weight: 400;
-    margin-bottom: 5px;
+.hero-text h2 {
+  font-weight: 400;
+  margin-bottom: 5px;
 }
 
-.hero-text h1{
-    font-family: 'Roboto Mono', monospace;
-    font-size: 50px;
-    line-height: 1;
-    margin: 20px 0 30px;
+.hero-text h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 50px;
+  line-height: 1;
+  margin: 20px 0 30px;
 }
 
-.hero-text p{
-    font-family: 'Roboto Mono', monospace;
-    font-size: 90%;
-    line-height: 1.9;
-    margin: 20px 0 40px;
+.hero-text p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 90%;
+  line-height: 1.9;
+  margin: 20px 0 40px;
 }
 
-.hero-img img{
-    width: 400px;
-    margin: 0 0 0 10%;
-    height: auto;
-    transition: all 5s linear;
+.hero-img img {
+  width: 400px;
+  margin: 0 0 0 10%;
+  height: auto;
+  transition: all 5s linear;
 }
 
-.hero-img img:hover{
-    width: 450px;
-    opacity: 0.6;
+.hero-img img:hover {
+  width: 450px;
+  opacity: 0.6;
 }
 
-.hero-text a{
+.hero-text a {
     display: inline-block;
-    background-color: #4d4d4d;
-    border: 1px solid transparent;
     padding: 15px 30px;
-    line-height: 1.4;
     font-size: 14px;
     font-weight: 500;
-    border-radius: 30px;
     text-transform: uppercase;
-    transition: all .5s ease;
-}
-
-.hero-text a:hover{
-    background-color: transparent;
-    border: solid white;
-    transform: translateX(8px);
-}
-
-.hero-text a.portfolio-btn{
+    border-radius: 30px;
+    line-height: 1.4;
+    background-color: #4d4d4d;
+    border: 1px solid transparent;
+    transition: all 0.5s ease;
+  }
+  
+  .hero-text a:hover {
     background-color: transparent;
     border: 1px solid white;
+    transform: translateX(8px);
+  }
+  
+  .hero-text a.portfolio-btn {
     margin-left: 20px;
-}
+    background-color: transparent;
+    border: 1px solid white;
+  }
+  
