@@ -7,9 +7,13 @@
   text-decoration: none;
   color: white;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: black;
+  background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
 }
 
 header {
@@ -22,6 +26,10 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 15px 3%;
+  background-color: rgba(26, 34, 37, 0.5);
+  box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .logo {
@@ -65,7 +73,6 @@ header {
   height: 100%;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -94,6 +101,7 @@ section {
   font-size: 90%;
   line-height: 1.9;
   margin: 20px 0 40px;
+  text-align: justify;
 }
 
 .hero-img img {
@@ -138,95 +146,138 @@ section {
 }
 
 .icons {
-    position: absolute;
-    top: 50vh;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50vh;
+  transform: translateY(-50%);
 }
 
-.icons i{
+.icons i {
+  display: block;
+  margin: 26px;
+  font-size: 30px;
+  transition: all 0.5s ease;
+}
+
+.icons i:hover {
+  color: #4d4d4d;
+  transform: translateY(-5%);
+}
+
+.about-me-section {
+  height: 100%;
+  width: 100%;
+  padding: 50px 8%;
+}
+
+.about-me-section-text {
+  padding-bottom: 20px;
+}
+
+.about-me-section-text p {
+  padding-top: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.about-me-section-text h3 {
+  padding-top: 20px;
+}
+
+.swiper {
+  text-align: center;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.75);
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #4c4d4c;
+}
+
+@media (max-width: 992px) {
+  section {
+    padding: 0 3%;
+    transition: 0.2s;
+  }
+
+  .hero-text {
+    padding-top: 0;
+  }
+
+  .hero-img {
+    text-align: center;
+  }
+
+  .hero-img img {
+    width: 80%;
+    margin: 0 0 0 10%;
+  }
+
+  .hero-text p {
+    font-size: 70%;
+  }
+
+  .icons {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-icons-action {
     display: block;
-    margin: 26px;
-    font-size: 30px;
+  }
+
+  #menu-icons {
+    display: block;
+  }
+
+  .hero-text {
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .hero-img img {
+    margin: 0;
+  }
+
+  .hero {
+    height: 100%;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 200px;
+    height: 180px;
+    background-color: #021719ef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
     transition: all 0.5s ease;
-}
+  }
 
-.icons i:hover{
-    color: #4d4d4d;
-    transform: translateY(-5%);
-}
+  .nav-list a {
+    display: block;
+    margin: 7px 0;
+  }
 
-@media (max-width:992px){
-    section{
-        padding: 0 3%;
-        transition: 0.2s;
-    }
+  #menu-toggle:checked + label.menu-icons-action + ul {
+    right: 0;
+  }
 
-    .hero-text{
-        padding-top: 0;
-    }
-
-    .hero-img{
-        text-align: center;
-    }
-
-    .hero-img img{
-        width: 80%;
-        margin:0 0 0 10%;
-    }
-
-    .hero-text p {
-        font-size: 70%;
-    }
-
-    .icons {
-        display: none;
-    }
-}
-
-@media (max-width:768px){
-    .menu-icons-action{
-        display: block;
-    }
-
-    #menu-icons {
-        display: block;
-    }
-
-    .hero-text{
-        text-align: center;
-        padding-top: 100px;
-    }
-
-    .hero-img img{
-        margin:0;
-    }
-
-    .hero {
-        height: 100%;
-        gap: 1rem;
-        grid-template-columns: 1fr;
-    }
-
-    .nav-list{
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        width: 200px;
-        height: 180px;
-        background-color: #021719ef;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 30px 20px;
-        transition: all 0.5s ease;
-    }
-
-    .nav-list a{
-        display: block;
-        margin: 7px 0
-    }
-
-    #menu-toggle:checked + label.menu-icons-action + ul{
-        right: 0;
-    }
+  .swiper {
+    width: 350px;
+    height: 350px;
+  }
 }

@@ -19,6 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -32,7 +36,7 @@
       <ul class="nav-list">
         <li><a href="#">Home</a></li>
         <!-- <li><a href="#">Portfolio</a></li> -->
-        <li><a href="#">Sobre mí</a></li>
+        <li><a href="#about-me-section">Sobre mí</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
     </header>
@@ -48,8 +52,10 @@
           Apasionado por las tecnologías, lógica y resolución de problemas en
           forma creativa y eficiente.
         </p>
-        <a href="#">CV</a>
-        <a href="#" class="portfolio-btn"><i class='bx bx-cabinet'></i>Portfolio</a>
+        <a href="https://drive.google.com/file/d/1Tn2PYbWtsN4F42pyyNlmwVRy0vWEZ5ph/view?usp=sharing" target="_blank">CV</a>
+        <a href="#" class="portfolio-btn"
+          ><i class="bx bx-cabinet"></i>Portfolio</a
+        >
       </div>
 
       <div class="hero-img">
@@ -58,8 +64,82 @@
     </section>
 
     <div class="icons">
-      <a href="#"><i class="ri-github-fill"></i></a>
-      <a href="#"><i class="ri-gitlab-line"></i></a>
+      <a href="https://github.com/leoyasu"><i class="ri-github-fill"></i></a>
+      <a href="https://gitlab.com/LeandroYasutake"
+        ><i class="ri-gitlab-line"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/leandro-yasutake-1a73632ba/"
+        ><i class="ri-linkedin-box-line"></i
+      ></a>
+      <a href="mailto:leandroyasutake@gmail.com"
+        ><i class="ri-mail-line"></i
+      ></a>
     </div>
+
+    <section class="about-me-section" id="about-me-section">
+      <div class="about-me-section-text">
+        <h1>Sobre mí</h1>
+        <p>
+          Soy un apasionado de la tecnología, estoy comprometido a seguir
+          aprendiendo y creciendo profesionalmente en el campo de la
+          informática. Me destaco por mi capacidad de adaptación a nuevos retos
+          y resolución de problemas. Estoy en la búsqueda de un cambio de
+          carrera y oportunidades que me permitan aplicar mis habilidades y
+          conocimientos en proyectos desafiantes.
+        </p>
+        <p>
+          Cuento con una sólida formación como Técnico Universitario en
+          Informática (UNGS 2023) y una trayectoria profesional en la atención y
+          administración de farmacia (2008-presente). Mi experiencia en farmacia
+          me ha proporcionado habilidades de resolución de problemas, atención
+          al detalle, escucha y comprensión hacia el cliente y trabajo en
+          equipo. Por otro lado, mi formación en Sistemas me ha equipado con
+          conocimientos técnicos y una mentalidad analítica para la resolución
+          lógica de problemas.
+        </p>
+        <h3>Intereses</h3>
+        <p>
+          Además de mi interés en la tecnología y lógica, tengo una profunda
+          afición por la astronomía y en particular por la astrofotografía. Tuve
+          el agrado de ser reconocido por el Planetario Galileo Galilei de la
+          Ciudad de Buenos Aires, donde mi trabajo se encuentra expuesto en la
+          muestra "<a
+            href="https://planetario.buenosaires.gob.ar/argentina-mira-el-cielo"
+            target="_blank"
+            style="text-decoration: underline"
+            >Argentina mira el cielo</a
+          >". Esta pasión por la astronomía refleja mis cualidades mencionadas
+          anteriormente, las cuales aplico en mi trabajo como desarrollador.
+        </p>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/img/muestra2.jpg" alt="muestra fotográfica" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/img/muestra1.jpg" alt="muestra fotográfica" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/img/muestra3.jpg" alt="muestra fotográfica" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: true,
+        },
+      });
+    </script>
   </body>
 </html>
