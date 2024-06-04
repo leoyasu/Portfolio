@@ -52,8 +52,12 @@
           Apasionado por las tecnologías, lógica y resolución de problemas en
           forma creativa y eficiente.
         </p>
-        <a href="https://drive.google.com/file/d/1Tn2PYbWtsN4F42pyyNlmwVRy0vWEZ5ph/view?usp=sharing" target="_blank">CV</a>
-        <a href="#" class="portfolio-btn"
+        <a
+          href="https://drive.google.com/file/d/1Tn2PYbWtsN4F42pyyNlmwVRy0vWEZ5ph/view?usp=sharing"
+          target="_blank"
+          >CV</a
+        >
+        <a href="#portfolio-section" class="portfolio-btn"
           ><i class="bx bx-cabinet"></i>Portfolio</a
         >
       </div>
@@ -118,28 +122,42 @@
             <img src="./assets/img/muestra2.jpg" alt="muestra fotográfica" />
           </div>
           <div class="swiper-slide">
-            <img src="./assets/img/muestra1.jpg" alt="muestra fotográfica" />
+            <img src="./assets/img/muestra3.jpg" alt="muestra fotográfica" />
           </div>
           <div class="swiper-slide">
-            <img src="./assets/img/muestra3.jpg" alt="muestra fotográfica" />
+            <img src="./assets/img/muestra1.jpg" alt="muestra fotográfica" />
           </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
     </section>
+
+    <section class="portfolio-section" id="portfolio-section">
+      <h1>Portfolio</h1>
+      <div class="project-barber-shop">
+        <h2>BarberShop</h2>
+        <img src="./assets/img/BarberShop.jpg" alt="Proyecto BarberShop" />
+        <div class="project-barber-shop-description">
+          <p>
+            El proyecto fue desarrolado en conjunto con mi equipo en la
+            simulación laboral de No Country y ofrece a los usuarios la
+            capacidad de reservar turnos en una peluquería específica. Con esta
+            plataforma, los clientes pueden elegir su peluquero preferido, así
+            como también seleccionar el día y la hora de su cita. Este sistema
+            simplifica el proceso de reserva, brindando comodidad tanto a los
+            clientes como al personal de la peluquería.
+          </p>
+          <a href="https://github.com/SantiagoNunezSelem/No-Country-C17" target="_blank"
+            >Ver Código</a
+          >
+          <a href="https://c17-peluqueria.vercel.app/" target="_blank"
+            >Ver Proyecto</a
+          >
+        </div>
+      </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".swiper", {
-        direction: "horizontal",
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        autoplay: {
-          delay: 3500,
-          disableOnInteraction: true,
-        },
-      });
-    </script>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
