@@ -260,6 +260,24 @@ section {
   transform: translateY(-8px);
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; 
+  z-index: 1000; 
+}
+
+.back-to-top:hover {
+  background-color: #555; 
+}
+
 @media (max-width: 992px) {
   section {
     padding: 0 3%;
