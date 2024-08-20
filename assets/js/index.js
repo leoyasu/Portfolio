@@ -22,7 +22,8 @@ sr.reveal(".about-me-section-text", { delay: 150, origin: "right" });
 sr.reveal(".about-me-section .swiper", { delay: 200, origin: "left" });
 
 sr.reveal(".portfolio-section h1", { delay: 150, origin: "top" });
-sr.reveal(".portfolio-section .project-barber-shop", { delay: 250, origin: "bottom" });
+sr.reveal(".portfolio-section .project-barber-shop", { delay: 250, origin: "right" });
+sr.reveal(".portfolio-section .project-chealth", { delay: 250, origin: "left" });
 
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
