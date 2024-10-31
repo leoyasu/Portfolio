@@ -216,7 +216,7 @@ section {
 .project-barber-shop,
 .project-chealth,
 .project-agroSmart,
-.project-breakfocus {
+.project-breakFocus {
   margin-top: 30px;
   margin-bottom: 50px;
 }
@@ -231,7 +231,7 @@ section {
 .project-barber-shop img,
 .project-chealth img,
 .swiper.swiper-agroSmart .swiper-slide img,
-.project-breakfocus img {
+.project-breakFocus img {
   width: 100%;
   max-width: 800px;
   height: auto;
@@ -243,14 +243,14 @@ section {
 .project-barber-shop-description p,
 .project-chealth p,
 .project-agroSmart-description p,
-.project-breakfocus p {
+.project-breakFocus p {
   margin-top: 20px;
 }
 
 .project-barber-shop h2,
 .project-chealth h2,
 .project-agroSmart h2,
-.project-breakfocus h2 {
+.project-breakFocus h2 {
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -258,14 +258,14 @@ section {
 .project-barber-shop-description p,
 .project-chealth-description p,
 .project-agroSmart-description p,
-.project-breakfocus-description p {
+.project-breakFocus-description p {
   text-align: justify;
 }
 
 .project-barber-shop-description a,
 .project-chealth-description a,
 .project-agroSmart-description a,
-.project-breakfocus-description a {
+.project-breakFocus-description a {
   margin-top: 15px;
   display: inline-block;
   padding: 15px 30px;
@@ -282,7 +282,7 @@ section {
 .project-barber-shop-description a:hover,
 .project-chealth-description a:hover,
 .project-agroSmart-description a:hover,
-.project-breakfocus-description a:hover {
+.project-breakFocus-description a:hover {
   background-color: #4d4d4d;
   border: 1px solid white;
   transform: translateY(-8px);
