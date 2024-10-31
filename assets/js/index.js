@@ -25,6 +25,7 @@ sr.reveal(".portfolio-section h1", { delay: 150, origin: "top" });
 sr.reveal(".portfolio-section .project-barber-shop", { delay: 250, origin: "right" });
 sr.reveal(".portfolio-section .project-chealth", { delay: 250, origin: "left" });
 sr.reveal(".portfolio-section .project-agroSmart", { delay: 250, origin: "right" });
+sr.reveal(".portfolio-section .project-breakfocus", { delay: 250, origin: "left" });
 
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
