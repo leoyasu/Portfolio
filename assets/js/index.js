@@ -24,6 +24,7 @@ sr.reveal(".about-me-section .swiper", { delay: 200, origin: "left" });
 sr.reveal(".portfolio-section h1", { delay: 150, origin: "top" });
 sr.reveal(".portfolio-section .project-barber-shop", { delay: 250, origin: "right" });
 sr.reveal(".portfolio-section .project-chealth", { delay: 250, origin: "left" });
+sr.reveal(".portfolio-section .project-agroSmart", { delay: 250, origin: "right" });
 
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
@@ -31,6 +32,15 @@ const swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
   },
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: true,
+  },
+});
+
+const swiperAgroSmart = new Swiper(".swiper-agroSmart", {
+  direction: "horizontal",
+  loop: true,
   autoplay: {
     delay: 3500,
     disableOnInteraction: true,
